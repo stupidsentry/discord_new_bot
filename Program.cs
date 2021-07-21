@@ -13,6 +13,7 @@ namespace testboy
     {
         private readonly DiscordSocketClient _client;
         private readonly IConfiguration _config;
+        
 
         static void Main(string[] args)
         {
@@ -22,6 +23,8 @@ namespace testboy
         public Program()
         {
             _client = new DiscordSocketClient();
+
+            
 
             //Hook into log event and write it out to the console
             _client.Log += LogAsync;
@@ -35,7 +38,7 @@ namespace testboy
             //Create the configuration
             var _builder = new ConfigurationBuilder()
                 .SetBasePath(AppContext.BaseDirectory)
-                .AddJsonFile(path: "config.json");            
+                .AddJsonFile(path: "config.json");
             _config = _builder.Build();
         }
 
@@ -62,16 +65,17 @@ namespace testboy
         }
 
         //I wonder if there's a better way to handle commands (spoiler: there is :))
-        private async Task MessageReceivedAsync(SocketMessage message)
+        public async Task MessageReceivedAsync(SocketMessage message)
         {
+            MessageHandler.HandleMessage(message);
             //This ensures we don't loop things by responding to ourselves (as the bot)
-            if (message.Author.Id == _client.CurrentUser.Id)
-                return;
+            // if (message.Author.Id == _client.CurrentUser.Id)
+            //     return;
 
-            if (message.Content == ".hello")
-            {
-                await message.Channel.SendMessageAsync("world!");
-            }  
+            // if (message.Content == ".hello")
+            // {
+            //     await message.Channel.SendMessageAsync("world!");
+            // }
         }
     }
 }

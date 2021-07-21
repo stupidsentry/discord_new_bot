@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hayden/dev/discord/testboy/testboy.csproj": {}
+    "/mnt/db164517-472b-4aaa-8e30-0aed6b655290/dev/alex/discord_new_bot/testboy.csproj": {}
   },
   "projects": {
-    "/home/hayden/dev/discord/testboy/testboy.csproj": {
+    "/mnt/db164517-472b-4aaa-8e30-0aed6b655290/dev/alex/discord_new_bot/testboy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hayden/dev/discord/testboy/testboy.csproj",
+        "projectUniqueName": "/mnt/db164517-472b-4aaa-8e30-0aed6b655290/dev/alex/discord_new_bot/testboy.csproj",
         "projectName": "testboy",
-        "projectPath": "/home/hayden/dev/discord/testboy/testboy.csproj",
+        "projectPath": "/mnt/db164517-472b-4aaa-8e30-0aed6b655290/dev/alex/discord_new_bot/testboy.csproj",
         "packagesPath": "/home/hayden/.nuget/packages/",
-        "outputPath": "/home/hayden/dev/discord/testboy/obj/",
+        "outputPath": "/mnt/db164517-472b-4aaa-8e30-0aed6b655290/dev/alex/discord_new_bot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hayden/.nuget/NuGet/NuGet.Config"
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

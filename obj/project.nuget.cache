@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vDEVJha8P5SJhrjJov5tXQp41IIBic8j/P0qw0kR5vSSGlDnySj/Hrou2/QoXgdKDTju1tmhTyYFzE7TTyvExg==",
+  "dgSpecHash": "bXxBL242+5z0VrracsV0IYs0cZsc4ZBNeN9G2A6QQgHEQAI7NZsgfIMfbMGqhsE1L7tGWp4qLl+eKD1la9busw==",
   "success": true,
-  "projectFilePath": "/home/hayden/dev/discord/testboy/testboy.csproj",
+  "projectFilePath": "/mnt/db164517-472b-4aaa-8e30-0aed6b655290/dev/alex/discord_new_bot/testboy.csproj",
   "expectedPackageFiles": [
     "/home/hayden/.nuget/packages/discord.net/2.3.1/discord.net.2.3.1.nupkg.sha512",
     "/home/hayden/.nuget/packages/discord.net.commands/2.3.1/discord.net.commands.2.3.1.nupkg.sha512",
