@@ -33,7 +33,7 @@ namespace testboy
             _client.Ready += ReadyAsync;
 
             //Hook into the message received event, this is how we handle the hello world example
-            _client.MessageReceived += MessageReceivedAsync;
+            _client.MessageReceived += MessageReceived;
 
             //Create the configuration
             var _builder = new ConfigurationBuilder()
@@ -65,17 +65,8 @@ namespace testboy
         }
 
         //I wonder if there's a better way to handle commands (spoiler: there is :))
-        public async Task MessageReceivedAsync(SocketMessage message)
-        {
-            MessageHandler.HandleMessage(message);
-            //This ensures we don't loop things by responding to ourselves (as the bot)
-            // if (message.Author.Id == _client.CurrentUser.Id)
-            //     return;
-
-            // if (message.Content == ".hello")
-            // {
-            //     await message.Channel.SendMessageAsync("world!");
-            // }
-        }
+        public void MessageReceived(SocketMessage message) => MessageHandler.HandleMessage(message);//This ensures we don't loop things by responding to ourselves (as the bot)// if (message.Author.Id == _client.CurrentUser.Id)//     return;// if (message.Content == ".hello")// {//     await message.Channel.SendMessageAsync("world!");// }
+        
+        
     }
 }
